@@ -39,7 +39,7 @@ export default defineConfig({
   //启动服务配置
   server: {
     open: true,
-    https: true,
+    https: false,
     cors: true,
     proxy: {
       '/api': {

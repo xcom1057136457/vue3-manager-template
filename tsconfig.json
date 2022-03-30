@@ -12,7 +12,7 @@
     "lib": ["esnext", "dom"],
     "baseUrl": ".",
     "paths": {
-      "@/*":["src/*"]
+      "@/*": ["src/*"]
     },
     "skipLibCheck": true,
     "types": ["element-plus/global"]
