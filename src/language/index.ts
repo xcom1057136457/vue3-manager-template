@@ -1,7 +1,7 @@
-import cn from './zh-CN'
+import zhCn from './zh-CN'
 import en from './en'
 
 export default {
-  cn,
+  zhCn,
   en
 }

@@ -1,5 +1,5 @@
-const cn = {
+const zhCn = {
   test: '测试'
 }
 
-export default cn
+export default zhCn

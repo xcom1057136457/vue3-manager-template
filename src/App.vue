@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  {{ $t('test') }}
+  <router-view />
 </template>
 
 <style></style>
