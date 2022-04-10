@@ -10,7 +10,7 @@
     "build:dev": "vue-tsc --noEmit && vite build --mode development",
     "build:test": "vue-tsc --noEmit && vite build --mode test",
     "build:staging": "vue-tsc --noEmit && vite build --mode staging",
-    "build": "vue-tsc --noEmit && vite build --mode production",
+    "build": "vue-tsc --noEmit && vite build && rimraf dist/**/*.js.map --mode production",
     "preview": "vite preview",
     "lint": "eslint src --fix --ext .ts,.tsx,.vue,.js,.jsx",
     "prettier": "prettier --write .",
@@ -29,6 +29,8 @@
     ]
   },
   "dependencies": {
+    "@sentry/tracing": "^6.19.6",
+    "@sentry/vue": "^6.19.6",
     "@vueuse/core": "^8.2.0",
     "axios": "^0.26.1",
     "dayjs": "^1.11.0",
@@ -39,6 +41,7 @@
     "nprogress": "^0.2.0",
     "pinia": "^2.0.0-rc.10",
     "qs": "^6.10.3",
+    "vite-plugin-sentry": "^1.0.14",
     "vue": "^3.2.25",
     "vue-i18n": "^9.2.0-beta.33",
     "vue-router": "^4.0.13"

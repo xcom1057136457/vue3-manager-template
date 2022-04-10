@@ -1,0 +1,8 @@
+[auth]
+token=81e3f1a6fce64203a7b876e3ff3c9f0cab1e2ac622c64d7ea4405147411dfc06   // token 获取 图片所示
+
+
+[defaults]
+url=https://sentry.io/   // sentry地址
+org=frank-x1   // 获取org,上图所示
+project=vue   // 创建的项目名
