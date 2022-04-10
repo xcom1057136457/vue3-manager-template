@@ -23,7 +23,7 @@ const sentryConfig: ViteSentryPluginOptions = {
   sourceMaps: {
     include: ['./dist/assets'],
     ignore: ['node_modules'],
-    urlPrefix: '@/assets'
+    urlPrefix: '~/assets'
   }
 }
 
@@ -73,6 +73,7 @@ export default defineConfig({
     }
   },
   build: {
+    sourcemap: true,
     terserOptions: {
       compress: {
         drop_console: true,
