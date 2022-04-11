@@ -68,7 +68,7 @@
 <script lang="ts" setup>
   import { LoginForm } from '@/types/User.Interface'
   import { reactive } from 'vue'
-  import { useLang } from '@/utils/lang'
+  import { useLang } from '@/hooks/lang'
 
   const { languageList, changeLang, currentLangua } = useLang()
 
