@@ -8,8 +8,12 @@ import i18n from '@/language/i18n'
 import '@/styles/index.scss'
 import * as Sentry from '@sentry/vue'
 import { Integrations } from '@sentry/tracing'
+import '@/assets/styles/element-plus.js'
+import { ElMessage } from 'element-plus'
 
 const app = createApp(App)
+
+app.config.globalProperties.$message = ElMessage
 
 Sentry.init({
   app,

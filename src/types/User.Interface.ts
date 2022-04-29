@@ -3,3 +3,9 @@ export interface LoginForm {
   password?: string
   selectLang?: string
 }
+
+export interface UserInfo {
+  userName?: string
+  rules?: unknown[]
+  avatar?: string
+}
